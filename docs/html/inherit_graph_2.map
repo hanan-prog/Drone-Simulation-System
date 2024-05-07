@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIEntityFactory.html" title="Provides an interface entites in the factor." alt="" coords="5,81,117,108"/>
+<area shape="rect" id="node2" href="$classCompositeFactory.html" title="A composite factory containing different component factories. Responsible for creating different type..." alt="" coords="184,5,324,32"/>
+<area shape="rect" id="node3" href="$classDroneFactory.html" title="The component factory that is responsible for creating drone entities in the simulation." alt="" coords="199,56,309,83"/>
+<area shape="rect" id="node4" href="$classRechargeStationFactory.html" title="factory method for the recharge stations" alt="" coords="165,107,343,133"/>
+<area shape="rect" id="node5" href="$classRobotFactory.html" title="The component factory that is responsible for creating robot entities in the simulation." alt="" coords="200,157,308,184"/>
+</map>

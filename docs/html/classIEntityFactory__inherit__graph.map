@@ -1,0 +1,7 @@
+<map id="IEntityFactory" name="IEntityFactory">
+<area shape="rect" id="node1" title="Provides an interface entites in the factor." alt="" coords="253,5,365,32"/>
+<area shape="rect" id="node2" href="$classCompositeFactory.html" title="A composite factory containing different component factories. Responsible for creating different type..." alt="" coords="5,80,145,107"/>
+<area shape="rect" id="node3" href="$classDroneFactory.html" title="The component factory that is responsible for creating drone entities in the simulation." alt="" coords="170,80,279,107"/>
+<area shape="rect" id="node4" href="$classRechargeStationFactory.html" title="factory method for the recharge stations" alt="" coords="304,80,481,107"/>
+<area shape="rect" id="node5" href="$classRobotFactory.html" title="The component factory that is responsible for creating robot entities in the simulation." alt="" coords="505,80,613,107"/>
+</map>

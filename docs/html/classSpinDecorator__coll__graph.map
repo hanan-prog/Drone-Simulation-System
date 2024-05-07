@@ -1,0 +1,5 @@
+<map id="SpinDecorator" name="SpinDecorator">
+<area shape="rect" id="node1" title="This class inherits from CelebrationDecorator. Implements having entities celebrate by spinning aroun..." alt="" coords="29,171,143,197"/>
+<area shape="rect" id="node2" href="$classCelebrationDecorator.html" title="Implements IStrategy and the base functionality of how entites celebrate after finishing their trip." alt="" coords="5,95,167,121"/>
+<area shape="rect" id="node3" href="$classIStrategy.html" title="provides an interface for the entity movement stratgies." alt="" coords="45,5,127,32"/>
+</map>

@@ -1,0 +1,200 @@
+\hypertarget{classBatteryBaseDecorator}{}\doxysection{Battery\+Base\+Decorator Class Reference}
+\label{classBatteryBaseDecorator}\index{BatteryBaseDecorator@{BatteryBaseDecorator}}
+
+
+Implements \mbox{\hyperlink{classIEntity}{I\+Entity}} as well as the basic functionality of a battery decorator.  
+
+
+
+
+{\ttfamily \#include $<$Battery\+Base\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for Battery\+Base\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classBatteryBaseDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Battery\+Base\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classBatteryBaseDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBatteryBaseDecorator_a01544c71d4da97232eb089023f3b0846}{Battery\+Base\+Decorator}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$entity\+\_\+)
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{classIEntity}{I\+Entity}} being wrapped with a battery decorator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBatteryBaseDecorator_af754241ff3b61120b998a1c1f2b77ea3}{$\sim$\+Battery\+Base\+Decorator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBatteryBaseDecorator_ad4d6f649e27ec4581983b98e91aba81d}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em calls the \mbox{\hyperlink{classBatteryBaseDecorator_ad4d6f649e27ec4581983b98e91aba81d}{Get\+Position()}} implementation of the wrapped entity \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBatteryBaseDecorator_a89e3b2e5410f1bae52f800d1207014ba}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em calls the \mbox{\hyperlink{classBatteryBaseDecorator_a89e3b2e5410f1bae52f800d1207014ba}{Get\+Direction()}} implementation of the wrapped entity \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBatteryBaseDecorator_a54d70449e7a23c27967970478bd08734}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em calls the \mbox{\hyperlink{classBatteryBaseDecorator_a54d70449e7a23c27967970478bd08734}{Get\+Destination()}} implementation of the wrapped entity \end{DoxyCompactList}\item 
+Json\+Object \mbox{\hyperlink{classBatteryBaseDecorator_a03fe44302e836988d41ad4999d1585b0}{Get\+Details}} () const
+\begin{DoxyCompactList}\small\item\em calls the \mbox{\hyperlink{classBatteryBaseDecorator_a03fe44302e836988d41ad4999d1585b0}{Get\+Details()}} implementation of the wrapped entity \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBatteryBaseDecorator_ad9371a476b5597141bff49a3e690245b}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em calls the \mbox{\hyperlink{classBatteryBaseDecorator_ad9371a476b5597141bff49a3e690245b}{Get\+Speed()}} implementation of the wrapped entity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBatteryBaseDecorator_a61497d7edb096141de9040566afe5a00}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em update the battery\+\_\+life when near recharge station. It also decrements the battery\+Life when drone is moving. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBatteryBaseDecorator_a2ae88157ba931f1a9f2daf2abef7aa2d}\label{classBatteryBaseDecorator_a2ae88157ba931f1a9f2daf2abef7aa2d}} 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ {\bfseries entity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements \mbox{\hyperlink{classIEntity}{I\+Entity}} as well as the basic functionality of a battery decorator. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBatteryBaseDecorator_a01544c71d4da97232eb089023f3b0846}\label{classBatteryBaseDecorator_a01544c71d4da97232eb089023f3b0846}} 
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\doxysubsubsection{\texorpdfstring{BatteryBaseDecorator()}{BatteryBaseDecorator()}}
+{\footnotesize\ttfamily Battery\+Base\+Decorator\+::\+Battery\+Base\+Decorator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the \mbox{\hyperlink{classIEntity}{I\+Entity}} being wrapped with a battery decorator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em entity\+\_\+} & The \mbox{\hyperlink{classIEntity}{I\+Entity}} to wrap battery decorator around \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBatteryBaseDecorator_af754241ff3b61120b998a1c1f2b77ea3}\label{classBatteryBaseDecorator_af754241ff3b61120b998a1c1f2b77ea3}} 
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!````~BatteryBaseDecorator@{$\sim$BatteryBaseDecorator}}
+\index{````~BatteryBaseDecorator@{$\sim$BatteryBaseDecorator}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\doxysubsubsection{\texorpdfstring{$\sim$BatteryBaseDecorator()}{~BatteryBaseDecorator()}}
+{\footnotesize\ttfamily Battery\+Base\+Decorator\+::$\sim$\+Battery\+Base\+Decorator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBatteryBaseDecorator_a54d70449e7a23c27967970478bd08734}\label{classBatteryBaseDecorator_a54d70449e7a23c27967970478bd08734}} 
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Battery\+Base\+Decorator\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calls the \mbox{\hyperlink{classBatteryBaseDecorator_a54d70449e7a23c27967970478bd08734}{Get\+Destination()}} implementation of the wrapped entity 
+
+\begin{DoxyReturn}{Returns}
+the destination of the wrapped entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryBaseDecorator_a03fe44302e836988d41ad4999d1585b0}\label{classBatteryBaseDecorator_a03fe44302e836988d41ad4999d1585b0}} 
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily Json\+Object Battery\+Base\+Decorator\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calls the \mbox{\hyperlink{classBatteryBaseDecorator_a03fe44302e836988d41ad4999d1585b0}{Get\+Details()}} implementation of the wrapped entity 
+
+\begin{DoxyReturn}{Returns}
+the details of the wrapped entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryBaseDecorator_a89e3b2e5410f1bae52f800d1207014ba}\label{classBatteryBaseDecorator_a89e3b2e5410f1bae52f800d1207014ba}} 
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Battery\+Base\+Decorator\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calls the \mbox{\hyperlink{classBatteryBaseDecorator_a89e3b2e5410f1bae52f800d1207014ba}{Get\+Direction()}} implementation of the wrapped entity 
+
+\begin{DoxyReturn}{Returns}
+the direction of the wrapped entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryBaseDecorator_ad4d6f649e27ec4581983b98e91aba81d}\label{classBatteryBaseDecorator_ad4d6f649e27ec4581983b98e91aba81d}} 
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Battery\+Base\+Decorator\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calls the \mbox{\hyperlink{classBatteryBaseDecorator_ad4d6f649e27ec4581983b98e91aba81d}{Get\+Position()}} implementation of the wrapped entity 
+
+\begin{DoxyReturn}{Returns}
+the position of the wrapped entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryBaseDecorator_ad9371a476b5597141bff49a3e690245b}\label{classBatteryBaseDecorator_ad9371a476b5597141bff49a3e690245b}} 
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Battery\+Base\+Decorator\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calls the \mbox{\hyperlink{classBatteryBaseDecorator_ad9371a476b5597141bff49a3e690245b}{Get\+Speed()}} implementation of the wrapped entity 
+
+\begin{DoxyReturn}{Returns}
+the speed of the wrapped entity 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBatteryBaseDecorator_a61497d7edb096141de9040566afe5a00}\label{classBatteryBaseDecorator_a61497d7edb096141de9040566afe5a00}} 
+\index{BatteryBaseDecorator@{BatteryBaseDecorator}!Update@{Update}}
+\index{Update@{Update}!BatteryBaseDecorator@{BatteryBaseDecorator}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Battery\+Base\+Decorator\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+update the battery\+\_\+life when near recharge station. It also decrements the battery\+Life when drone is moving. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em scheduler} & not sure if we need to declare a different update method specific to batterys \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9a8e8588fd85c7b0d813d60686d4dc2c}{I\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/abdir074/csci-\/3081w-\/f22/\+Team-\/010-\/17-\/homework04/libs/transit/include/Battery\+Base\+Decorator.\+h\item 
+/home/abdir074/csci-\/3081w-\/f22/\+Team-\/010-\/17-\/homework04/libs/transit/src/Battery\+Base\+Decorator.\+cc\end{DoxyCompactItemize}

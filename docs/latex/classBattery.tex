@@ -1,0 +1,320 @@
+\hypertarget{classBattery}{}\doxysection{Battery Class Reference}
+\label{classBattery}\index{Battery@{Battery}}
+
+
+battery entity thats wrapped around the drone. Represents the battery percent of a drone.  
+
+
+
+
+{\ttfamily \#include $<$Battery.\+h$>$}
+
+
+
+Inheritance diagram for Battery\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classBattery__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Battery\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classBattery__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBattery_a137a8b7370b6004d7b108369c69e1bbb}{Battery}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBattery}{Battery}} entity. Calls the \mbox{\hyperlink{classBatteryBaseDecorator}{Battery\+Base\+Decorator}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBattery_a637d8766eb5cbdb33ab2a19a30622bc3}{$\sim$\+Battery}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBattery_a663135224fffa67d99ebca94e20c8f14}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em gets the position of the drone \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBattery_a7cdf643529a636c520c818021a53f52a}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em gets the direction of the drone \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBattery_aca0cff331b794fcc81c36632b60539ee}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em gets the destination of the drone \end{DoxyCompactList}\item 
+Json\+Object \mbox{\hyperlink{classBattery_ab1b1a6aa8931910ac3bdeaf1cce28731}{Get\+Details}} () const
+\begin{DoxyCompactList}\small\item\em gets the detials about a drone \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBattery_a53d93616419ed533a515c0879be92a78}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets the speead of the drone/entity object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBattery_ad334ae13ad2d8ab4b8910a0205bb5f27}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em updates the battery life based on weather the drone is moving or not. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBattery_a4944944551b3c9b8a62bd07be4f4e11c}{Get\+Battery\+Life}} ()
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{classBattery}{Battery}} Life. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBattery_ae4591b80853be5e331dcf8bea8ee1ebe}{Get\+Distance\+\_\+\+From\+Drone\+\_\+\+To\+Robot}} (std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Gets the Distance To the \mbox{\hyperlink{classRobot}{Robot}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBattery_ab5059a428f79d65483db03ce0bfc94eb}{Get\+Distance\+\_\+\+From\+Station\+\_\+\+To\+Robot}} (std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Get the Distance From Station To \mbox{\hyperlink{classRobot}{Robot}} object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBattery_ad114e3fe65d61f8bf921584b5d5bd178}{Get\+Distance\+\_\+\+From\+Robot\+\_\+\+To\+Destination}} (std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Get the Distance From \mbox{\hyperlink{classRobot}{Robot}} To it\textquotesingle{}s Destination. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBattery_aca751b19a89971e31adf45454f2d2908}{Get\+Distance\+\_\+\+From\+Robot\+Dest\+\_\+\+To\+Station}} (std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Get the Distance From \mbox{\hyperlink{classRobot}{Robot}} destination To recharge station. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classBattery_a109d6b449a6fda93bd912eee25ae8bf2}{Get\+Nearest\+Entity}} (std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em Get the Nearest Entity from scheduler. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classBattery_aa8ebac6e521036bd5ce15ee705b116cd}{Get\+Nearest\+Station}} (\mbox{\hyperlink{classVector3}{Vector3}} location)
+\begin{DoxyCompactList}\small\item\em Get the Nearest Station object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBattery_a406a84b2df7e02dddce7f46b59aef2f4}{Prepare\+For\+Trip}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+battery entity thats wrapped around the drone. Represents the battery percent of a drone. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBattery_a137a8b7370b6004d7b108369c69e1bbb}\label{classBattery_a137a8b7370b6004d7b108369c69e1bbb}} 
+\index{Battery@{Battery}!Battery@{Battery}}
+\index{Battery@{Battery}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{Battery()}{Battery()}}
+{\footnotesize\ttfamily Battery\+::\+Battery (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBattery}{Battery}} entity. Calls the \mbox{\hyperlink{classBatteryBaseDecorator}{Battery\+Base\+Decorator}} constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em entity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBattery_a637d8766eb5cbdb33ab2a19a30622bc3}\label{classBattery_a637d8766eb5cbdb33ab2a19a30622bc3}} 
+\index{Battery@{Battery}!````~Battery@{$\sim$Battery}}
+\index{````~Battery@{$\sim$Battery}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{$\sim$Battery()}{~Battery()}}
+{\footnotesize\ttfamily Battery\+::$\sim$\+Battery (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBattery_a4944944551b3c9b8a62bd07be4f4e11c}\label{classBattery_a4944944551b3c9b8a62bd07be4f4e11c}} 
+\index{Battery@{Battery}!GetBatteryLife@{GetBatteryLife}}
+\index{GetBatteryLife@{GetBatteryLife}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetBatteryLife()}{GetBatteryLife()}}
+{\footnotesize\ttfamily float Battery\+::\+Get\+Battery\+Life (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the \mbox{\hyperlink{classBattery}{Battery}} Life. 
+
+\begin{DoxyReturn}{Returns}
+battery life 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_aca0cff331b794fcc81c36632b60539ee}\label{classBattery_aca0cff331b794fcc81c36632b60539ee}} 
+\index{Battery@{Battery}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Battery\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gets the destination of the drone 
+
+\begin{DoxyReturn}{Returns}
+the destination of the drone as a vector 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBattery_ab1b1a6aa8931910ac3bdeaf1cce28731}\label{classBattery_ab1b1a6aa8931910ac3bdeaf1cce28731}} 
+\index{Battery@{Battery}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily Json\+Object Battery\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gets the detials about a drone 
+
+\begin{DoxyReturn}{Returns}
+details about the drone. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBattery_a7cdf643529a636c520c818021a53f52a}\label{classBattery_a7cdf643529a636c520c818021a53f52a}} 
+\index{Battery@{Battery}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Battery\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gets the direction of the drone 
+
+\begin{DoxyReturn}{Returns}
+the direction of the drone as a vector value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBattery_ae4591b80853be5e331dcf8bea8ee1ebe}\label{classBattery_ae4591b80853be5e331dcf8bea8ee1ebe}} 
+\index{Battery@{Battery}!GetDistance\_FromDrone\_ToRobot@{GetDistance\_FromDrone\_ToRobot}}
+\index{GetDistance\_FromDrone\_ToRobot@{GetDistance\_FromDrone\_ToRobot}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetDistance\_FromDrone\_ToRobot()}{GetDistance\_FromDrone\_ToRobot()}}
+{\footnotesize\ttfamily float Battery\+::\+Get\+Distance\+\_\+\+From\+Drone\+\_\+\+To\+Robot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})}
+
+
+
+Gets the Distance To the \mbox{\hyperlink{classRobot}{Robot}}. 
+
+\begin{DoxyReturn}{Returns}
+the distance to the robot as a float value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_ad114e3fe65d61f8bf921584b5d5bd178}\label{classBattery_ad114e3fe65d61f8bf921584b5d5bd178}} 
+\index{Battery@{Battery}!GetDistance\_FromRobot\_ToDestination@{GetDistance\_FromRobot\_ToDestination}}
+\index{GetDistance\_FromRobot\_ToDestination@{GetDistance\_FromRobot\_ToDestination}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetDistance\_FromRobot\_ToDestination()}{GetDistance\_FromRobot\_ToDestination()}}
+{\footnotesize\ttfamily float Battery\+::\+Get\+Distance\+\_\+\+From\+Robot\+\_\+\+To\+Destination (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})}
+
+
+
+Get the Distance From \mbox{\hyperlink{classRobot}{Robot}} To it\textquotesingle{}s Destination. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_aca751b19a89971e31adf45454f2d2908}\label{classBattery_aca751b19a89971e31adf45454f2d2908}} 
+\index{Battery@{Battery}!GetDistance\_FromRobotDest\_ToStation@{GetDistance\_FromRobotDest\_ToStation}}
+\index{GetDistance\_FromRobotDest\_ToStation@{GetDistance\_FromRobotDest\_ToStation}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetDistance\_FromRobotDest\_ToStation()}{GetDistance\_FromRobotDest\_ToStation()}}
+{\footnotesize\ttfamily float Battery\+::\+Get\+Distance\+\_\+\+From\+Robot\+Dest\+\_\+\+To\+Station (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})}
+
+
+
+Get the Distance From \mbox{\hyperlink{classRobot}{Robot}} destination To recharge station. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_ab5059a428f79d65483db03ce0bfc94eb}\label{classBattery_ab5059a428f79d65483db03ce0bfc94eb}} 
+\index{Battery@{Battery}!GetDistance\_FromStation\_ToRobot@{GetDistance\_FromStation\_ToRobot}}
+\index{GetDistance\_FromStation\_ToRobot@{GetDistance\_FromStation\_ToRobot}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetDistance\_FromStation\_ToRobot()}{GetDistance\_FromStation\_ToRobot()}}
+{\footnotesize\ttfamily float Battery\+::\+Get\+Distance\+\_\+\+From\+Station\+\_\+\+To\+Robot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})}
+
+
+
+Get the Distance From Station To \mbox{\hyperlink{classRobot}{Robot}} object. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_a109d6b449a6fda93bd912eee25ae8bf2}\label{classBattery_a109d6b449a6fda93bd912eee25ae8bf2}} 
+\index{Battery@{Battery}!GetNearestEntity@{GetNearestEntity}}
+\index{GetNearestEntity@{GetNearestEntity}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetNearestEntity()}{GetNearestEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Battery\+::\+Get\+Nearest\+Entity (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})}
+
+
+
+Get the Nearest Entity from scheduler. 
+
+\begin{DoxyReturn}{Returns}
+I\+Entity$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_aa8ebac6e521036bd5ce15ee705b116cd}\label{classBattery_aa8ebac6e521036bd5ce15ee705b116cd}} 
+\index{Battery@{Battery}!GetNearestStation@{GetNearestStation}}
+\index{GetNearestStation@{GetNearestStation}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetNearestStation()}{GetNearestStation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Battery\+::\+Get\+Nearest\+Station (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{location }\end{DoxyParamCaption})}
+
+
+
+Get the Nearest Station object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} postion of the nearest station 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattery_a663135224fffa67d99ebca94e20c8f14}\label{classBattery_a663135224fffa67d99ebca94e20c8f14}} 
+\index{Battery@{Battery}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Battery\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gets the position of the drone 
+
+\begin{DoxyReturn}{Returns}
+position of the drone 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBattery_a53d93616419ed533a515c0879be92a78}\label{classBattery_a53d93616419ed533a515c0879be92a78}} 
+\index{Battery@{Battery}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Battery\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the speead of the drone/entity object. 
+
+\begin{DoxyReturn}{Returns}
+speed of the drone 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classBattery_a406a84b2df7e02dddce7f46b59aef2f4}\label{classBattery_a406a84b2df7e02dddce7f46b59aef2f4}} 
+\index{Battery@{Battery}!PrepareForTrip@{PrepareForTrip}}
+\index{PrepareForTrip@{PrepareForTrip}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{PrepareForTrip()}{PrepareForTrip()}}
+{\footnotesize\ttfamily void Battery\+::\+Prepare\+For\+Trip (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scheduler} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBattery_ad334ae13ad2d8ab4b8910a0205bb5f27}\label{classBattery_ad334ae13ad2d8ab4b8910a0205bb5f27}} 
+\index{Battery@{Battery}!Update@{Update}}
+\index{Update@{Update}!Battery@{Battery}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Battery\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updates the battery life based on weather the drone is moving or not. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dt} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em scheduler} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9a8e8588fd85c7b0d813d60686d4dc2c}{I\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/abdir074/csci-\/3081w-\/f22/\+Team-\/010-\/17-\/homework04/libs/transit/include/Battery.\+h\item 
+/home/abdir074/csci-\/3081w-\/f22/\+Team-\/010-\/17-\/homework04/libs/transit/src/Battery.\+cc\end{DoxyCompactItemize}
